@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/app.js",
     "start:urls": "node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [
     "proxy-pattern",
@@ -16,5 +16,8 @@
     "structural-pattern"
   ],
   "author": "Equipe Proxy Pattern",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
 }
